@@ -101,4 +101,4 @@ The build folder will contain the optimized production files.
 ### Technologies Used
 - React 18
 - CSS3 with modern features
-- ES6+ JavaScript 
+- ES6+ JavaScript
