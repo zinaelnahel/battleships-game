@@ -1,0 +1,32 @@
+.ships-remaining {
+  text-align: left;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 1rem;
+  border-radius: 10px;
+  min-width: 250px;
+}
+
+.ships-remaining h2 {
+  color: #4ecca3;
+  margin-bottom: 1rem;
+}
+
+.ships-remaining ul {
+  list-style: none;
+}
+
+.ships-remaining li {
+  margin: 0.5rem 0;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.ships-remaining li.sunk {
+  color: #ff6b6b;
+  text-decoration: line-through;
+}
+
+.ships-remaining .hits {
+  color: #4ecca3;
+  font-weight: bold;
+} 

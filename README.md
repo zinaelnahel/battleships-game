@@ -1,6 +1,6 @@
-# Battleships Game
+# Battleships React Game
 
-A modern web-based implementation of the classic Battleships game where a player plays against computer-placed ships.
+A modern React-based implementation of the classic Battleships game where a player plays against computer-placed ships.
 
 ## Game Rules
 - The game is played on a 10x10 grid
@@ -10,17 +10,21 @@ A modern web-based implementation of the classic Battleships game where a player
 - The game ends when all ships are sunk
 
 ## Requirements
-- Python 3.6 or higher
-- A modern web browser (Chrome, Firefox, Safari, or Edge)
+- Node.js 14 or higher
+- npm or yarn
 
 ## How to Run
-1. Make sure you have Python installed
-2. Open a terminal in the project directory
-3. Start the local server:
+1. Install dependencies:
 ```bash
-python3 -m http.server 8000
+npm install
 ```
-4. Open your web browser and visit: http://localhost:8000
+
+2. Start the development server:
+```bash
+npm start
+```
+
+3. Open your browser and visit: http://localhost:3000
 
 ## User Interface Guide
 
@@ -37,6 +41,7 @@ python3 -m http.server 8000
    - Shows the status of each ship
    - Displays current hits for each ship
    - Updates automatically when you hit a ship
+   - Sunk ships are crossed out in red
    - Format: "Ship Name (Size) Current Hits/Total Size"
 
 3. **Message Box**
@@ -69,17 +74,31 @@ python3 -m http.server 8000
 3. **Game Progress**
    - Track your progress through the ships remaining panel
    - Each hit is counted and displayed
-   - When a ship is sunk, you'll see a message
+   - When a ship is sunk, you'll see a message and it will be crossed out
    - The game ends when all ships are sunk
 
 4. **Starting a New Game**
    - Click the "New Game" button at any time
    - All ships will be randomly placed again
    - The board will be cleared
-   - Your score will be reset
+   - Your progress will be reset
 
-### Tips
-- Plan your shots strategically
-- Look for patterns in your hits to find ships
-- Use the ships remaining panel to track your progress
-- Don't worry about the favicon.ico 404 error - it doesn't affect gameplay 
+### Features
+- Responsive design that works on desktop and mobile
+- Modern React hooks for state management
+- Component-based architecture for maintainability
+- Smooth animations and hover effects
+- Visual feedback for all game actions
+
+### Build for Production
+To create a production build:
+```bash
+npm run build
+```
+
+The build folder will contain the optimized production files.
+
+### Technologies Used
+- React 18
+- CSS3 with modern features
+- ES6+ JavaScript 
